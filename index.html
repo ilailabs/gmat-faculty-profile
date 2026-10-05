@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Elankovan Gopal | GATE Faculty | Engineering Mathematics & Mechanical Engineering
+    </title>
+
+    <meta name="description"
+        content="GATE Faculty specializing in Engineering Mathematics, Mechanical Engineering, Applied Mechanics, Fluid Mechanics and Thermodynamics. IIT Madras alumnus with 7+ years of teaching experience.">
+
+    <meta name="keywords"
+        content="GATE Faculty, GATE Engineering Mathematics Faculty, GATE Mechanical Engineering Faculty,
+        GATE Mathematics, GATE ME, GATE Mechanical, Engineering Mathematics,
+        GATE Mathematics Faculty Chennai, GATE Faculty Bangalore,
+        GATE Coaching, GATE Preparation, GATE Exam Faculty,
+        Engineering Mathematics Teacher, Mechanical Engineering Teacher,
+        Fluid Mechanics, Thermodynamics, Engineering Mechanics,
+        Applied Mechanics, Numerical Methods, Differential Equations,
+        IIT Madras Alumni, GATE Mentor, GATE Online Classes">
+
+    <meta name="author" content="Elankovan Gopal">
+
+    <style>
+
+        :root {
+            --primary: #0756a3;
+            --primary-dark: #063b73;
+            --primary-light: #eaf4ff;
+            --secondary: #0d78d5;
+            --text: #172033;
+            --muted: #607086;
+            --white: #ffffff;
+            --border: #dce8f5;
+            --background: #f6f9fd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ---------------- NAVIGATION ---------------- */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(10px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 16px 24px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* ---------------- HERO ---------------- */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #063b73 0%,
+                    #0756a3 50%,
+                    #0d78d5 100%
+                );
+
+            color: white;
+            padding: 90px 24px;
+        }
+
+        .hero-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 7px 14px;
+            border-radius: 30px;
+
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+
+            font-size: 13px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            line-height: 1.08;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #dceeff;
+        }
+
+        .hero p {
+            max-width: 720px;
+            color: #e8f4ff;
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 8px;
+
+            font-weight: 700;
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ---------------- PROFILE CARD ---------------- */
+
+        .profile-card {
+            background: white;
+            color: var(--text);
+
+            border-radius: 18px;
+            padding: 32px;
+
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .profile-card .initial {
+            width: 90px;
+            height: 90px;
+
+            border-radius: 50%;
+
+            background: var(--primary-light);
+            color: var(--primary);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 34px;
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+        .profile-card h3 {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .profile-card .role {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .profile-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .profile-item:last-child {
+            border-bottom: none;
+        }
+
+        /* ---------------- GENERAL SECTIONS ---------------- */
+
+        section {
+            padding: 80px 24px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-label {
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+            font-size: 12px;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 34px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .section-description {
+            max-width: 760px;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+
+        /* ---------------- ABOUT ---------------- */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .about-text {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .stat {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        .stat strong {
+            display: block;
+            color: var(--primary);
+            font-size: 28px;
+        }
+
+        .stat span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* ---------------- SUBJECTS ---------------- */
+
+        .subjects {
+            background: white;
+        }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .subject-card {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+
+            background: linear-gradient(
+                180deg,
+                #ffffff,
+                #f8fbff
+            );
+        }
+
+        .subject-number {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .subject-card h3 {
+            font-size: 24px;
+            margin: 8px 0 10px;
+        }
+
+        .subject-card p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .topic-tag {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+
+            padding: 6px 10px;
+            border-radius: 6px;
+
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* ---------------- SYLLABUS ---------------- */
+
+        .syllabus-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .syllabus-card {
+            background: white;
+            border: 1px solid var(--border);
+
+            border-radius: 14px;
+            padding: 26px;
+        }
+
+        .syllabus-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 7px;
+            color: var(--muted);
+        }
+
+        /* ---------------- EXPERIENCE ---------------- */
+
+        .timeline {
+            border-left: 3px solid #bcd8f2;
+            padding-left: 28px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: "";
+
+            position: absolute;
+            left: -38px;
+            top: 5px;
+
+            width: 14px;
+            height: 14px;
+
+            background: var(--primary);
+            border-radius: 50%;
+
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #bcd8f2;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 4px;
+        }
+
+        .timeline-item .date {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+        }
+
+        /* ---------------- TEACHING APPROACH ---------------- */
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .approach-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 28px;
+            border-radius: 14px;
+        }
+
+        .approach-card .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .approach-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .approach-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* ---------------- KEYWORDS ---------------- */
+
+        .keywords {
+            background: #edf6ff;
+        }
+
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .keyword {
+            background: white;
+            border: 1px solid #cfe2f5;
+
+            padding: 8px 13px;
+            border-radius: 7px;
+
+            font-size: 13px;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        /* ---------------- EDUCATION ---------------- */
+
+        .education-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .education-card h3 {
+            color: var(--primary);
+        }
+
+        .education-card p {
+            color: var(--muted);
+        }
+
+        /* ---------------- CTA ---------------- */
+
+        .cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    #063b73,
+                    #0756a3
+                );
+
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #dceeff;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+
+        footer {
+            background: #071d35;
+            color: #9eb6cc;
+
+            padding: 30px 24px;
+            text-align: center;
+
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* ---------------- RESPONSIVE ---------------- */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container,
+            .about-grid,
+            .subject-grid,
+            .syllabus-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .approach-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 65px 20px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+    <div class="nav-container">
+
+        <a href="#top" class="logo">
+            GATE Faculty
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#about">Profile</a>
+
+            <a href="#subjects">Subjects</a>
+
+            <a href="#syllabus">Syllabus</a>
+
+            <a href="#experience">Experience</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero" id="top">
+
+    <div class="hero-container">
+
+        <div>
+
+            <span class="badge">
+                GATE FACULTY • ENGINEERING EDUCATION
+            </span>
+
+            <h1>
+                Elankovan Gopal
+            </h1>
+
+            <h2>
+                GATE Faculty — Engineering Mathematics & Mechanical Engineering
+            </h2>
+
+            <p>
+                IIT Madras alumnus and experienced engineering mathematics
+                educator specializing in GATE preparation, mathematical
+                problem solving, applied mechanics and core mechanical
+                engineering subjects.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#syllabus" class="btn btn-primary">
+                    View GATE Syllabus
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <div class="initial">
+                EG
+            </div>
+
+            <h3>
+                Elankovan Gopal
+            </h3>
+
+            <div class="role">
+                GATE Faculty & Engineering Educator
+            </div>
+
+            <div class="profile-item">
+                <strong>Specialization:</strong>
+                Engineering Mathematics
+            </div>
+
+            <div class="profile-item">
+                <strong>Additional Subjects:</strong>
+                Mechanical Engineering
+            </div>
+
+            <div class="profile-item">
+                <strong>Experience:</strong>
+                7+ Years Teaching
+            </div>
+
+            <div class="profile-item">
+                <strong>Education:</strong>
+                M.S. (Research), IIT Madras
+            </div>
+
+            <div class="profile-item">
+                <strong>Focus:</strong>
+                GATE • Engineering Mathematics • Mechanical Engineering
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            Faculty Profile
+        </div>
+
+        <h2 class="section-title">
+            Engineering Mathematics with an Engineering Mindset
+        </h2>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    Elankovan Gopal is an IIT Madras alumnus and engineering
+                    educator with extensive experience teaching mathematics
+                    from undergraduate engineering level to competitive
+                    examinations.
+                </p>
+
+                <br>
+
+                <p>
+                    His teaching approach focuses on developing conceptual
+                    clarity, mathematical intuition and problem-solving
+                    ability rather than relying only on formula memorization.
+                </p>
+
+                <br>
+
+                <p>
+                    For GATE aspirants, the focus is on understanding the
+                    underlying concepts, identifying recurring problem
+                    patterns, solving numerical problems efficiently and
+                    developing exam-oriented problem-solving strategies.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat">
+                    <strong>7+</strong>
+                    <span>Years Teaching Experience</span>
+                </div>
+
+                <div class="stat">
+                    <strong>IITM</strong>
+                    <span>IIT Madras Alumni</span>
+                </div>
+
+                <div class="stat">
+                    <strong>GATE</strong>
+                    <span>Engineering Mathematics</span>
+                </div>
+
+                <div class="stat">
+                    <strong>ME</strong>
+                    <span>Mechanical Engineering</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SUBJECTS
+===================================================== -->
+
+<section class="subjects" id="subjects">
+
+    <div class="container">
+
+        <div class="section-label">
+            GATE Subjects
+        </div>
+
+        <h2 class="section-title">
+            Subjects Offered
+        </h2>
+
+        <p class="section-description">
+            Focused instruction for GATE aspirants in Engineering Mathematics
+            and selected core Mechanical Engineering subjects.
+        </p>
+
+
+        <div class="subject-grid">
+
+
+            <!-- ENGINEERING MATHEMATICS -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    SUBJECT 01
+                </div>
+
+                <h3>
+                    Engineering Mathematics
+                </h3>
+
+                <p>
+                    Complete GATE Engineering Mathematics preparation with
+                    concept building, mathematical techniques, numerical
+                    problem solving and previous-year question analysis.
+                </p>
+
+                <div class="topic-tags">
+
+                    <span class="topic-tag">
+                        Linear Algebra
+                    </span>
+
+                    <span class="topic-tag">
+                        Calculus
+                    </span>
+
+                    <span class="topic-tag">
+                        Differential Equations
+                    </span>
+
+                    <span class="topic-tag">
+                        Complex Variables
+                    </span>
+
+                    <span class="topic-tag">
+                        Probability
+                    </span>
+
+                    <span class="topic-tag">
+                        Statistics
+                    </span>
+
+                    <span class="topic-tag">
+                        Numerical Methods
+                    </span>
+
+                    <span class="topic-tag">
+                        Vector Calculus
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MECHANICAL -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    SUBJECT 02
+                </div>
+
+                <h3>
+                    Mechanical Engineering
+                </h3>
+
+                <p>
+                    Selected core Mechanical Engineering topics with emphasis
+                    on fundamentals, derivations, numerical problem solving
+                    and GATE-oriented applications.
+                </p>
+
+                <div class="topic-tags">
+
+                    <span class="topic-tag">
+                        Engineering Mechanics
+                    </span>
+
+                    <span class="topic-tag">
+                        Fluid Mechanics
+                    </span>
+
+                    <span class="topic-tag">
+                        Thermodynamics
+                    </span>
+
+                    <span class="topic-tag">
+                        Heat Transfer
+                    </span>
+
+                    <span class="topic-tag">
+                        Applied Mechanics
+                    </span>
+
+                    <span class="topic-tag">
+                        Thermal Sciences
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ENGINEERING MATHEMATICS SYLLABUS
+===================================================== -->
+
+<section id="syllabus">
+
+    <div class="container">
+
+        <div class="section-label">
+            GATE 2026 Syllabus
+        </div>
+
+        <h2 class="section-title">
+            Engineering Mathematics
+        </h2>
+
+        <p class="section-description">
+            GATE Mechanical Engineering Engineering Mathematics topics.
+        </p>
+
+
+        <div class="syllabus-grid">
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Linear Algebra
+                </h3>
+
+                <ul>
+
+                    <li>Matrix algebra</li>
+
+                    <li>Systems of linear equations</li>
+
+                    <li>Rank and matrix properties</li>
+
+                    <li>Eigenvalues and eigenvectors</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Calculus
+                </h3>
+
+                <ul>
+
+                    <li>Functions of a single variable</li>
+
+                    <li>Limits, continuity and differentiability</li>
+
+                    <li>Mean value theorems</li>
+
+                    <li>Definite and improper integrals</li>
+
+                    <li>Double and triple integrals</li>
+
+                    <li>Partial and total derivatives</li>
+
+                    <li>Taylor series</li>
+
+                    <li>Maxima and minima</li>
+
+                    <li>Fourier series</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Vector Calculus
+                </h3>
+
+                <ul>
+
+                    <li>Gradient</li>
+
+                    <li>Divergence</li>
+
+                    <li>Curl</li>
+
+                    <li>Vector identities</li>
+
+                    <li>Directional derivatives</li>
+
+                    <li>Line integrals</li>
+
+                    <li>Surface integrals</li>
+
+                    <li>Volume integrals</li>
+
+                    <li>Gauss, Stokes and Green's theorems</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Differential Equations
+                </h3>
+
+                <ul>
+
+                    <li>First-order linear equations</li>
+
+                    <li>First-order nonlinear equations</li>
+
+                    <li>Higher-order linear ODEs</li>
+
+                    <li>Constant coefficient equations</li>
+
+                    <li>Euler-Cauchy equation</li>
+
+                    <li>Initial and boundary value problems</li>
+
+                    <li>Laplace transforms</li>
+
+                    <li>Heat equation</li>
+
+                    <li>Wave equation</li>
+
+                    <li>Laplace equation</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Complex Variables
+                </h3>
+
+                <ul>
+
+                    <li>Analytic functions</li>
+
+                    <li>Cauchy-Riemann equations</li>
+
+                    <li>Cauchy's integral theorem</li>
+
+                    <li>Cauchy's integral formula</li>
+
+                    <li>Taylor series</li>
+
+                    <li>Laurent series</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Probability & Statistics
+                </h3>
+
+                <ul>
+
+                    <li>Probability fundamentals</li>
+
+                    <li>Sampling theorems</li>
+
+                    <li>Conditional probability</li>
+
+                    <li>Mean, median and mode</li>
+
+                    <li>Standard deviation</li>
+
+                    <li>Random variables</li>
+
+                    <li>Binomial distribution</li>
+
+                    <li>Poisson distribution</li>
+
+                    <li>Normal distribution</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Numerical Methods
+                </h3>
+
+                <ul>
+
+                    <li>Linear algebraic equations</li>
+
+                    <li>Non-linear algebraic equations</li>
+
+                    <li>Trapezoidal integration</li>
+
+                    <li>Simpson's rule</li>
+
+                    <li>Single-step methods</li>
+
+                    <li>Multi-step methods</li>
+
+                    <li>Numerical solutions of differential equations</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MECHANICAL ENGINEERING
+===================================================== -->
+
+<section class="subjects">
+
+    <div class="container">
+
+        <div class="section-label">
+            GATE Mechanical Engineering
+        </div>
+
+        <h2 class="section-title">
+            Core Mechanical Engineering Topics
+        </h2>
+
+        <p class="section-description">
+            Focused preparation in Engineering Mechanics, Fluid Mechanics
+            and Thermodynamics.
+        </p>
+
+
+        <div class="syllabus-grid">
+
+
+            <!-- ENGINEERING MECHANICS -->
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Engineering Mechanics
+                </h3>
+
+                <ul>
+
+                    <li>Free-body diagrams</li>
+
+                    <li>Equilibrium of rigid bodies</li>
+
+                    <li>Friction and its applications</li>
+
+                    <li>Rolling friction</li>
+
+                    <li>Belt-pulley systems</li>
+
+                    <li>Brakes and clutches</li>
+
+                    <li>Screw jack and wedge problems</li>
+
+                    <li>Trusses and frames</li>
+
+                    <li>Virtual work</li>
+
+                    <li>Kinematics of rigid bodies</li>
+
+                    <li>Dynamics of rigid bodies</li>
+
+                    <li>Impulse and momentum</li>
+
+                    <li>Energy formulations</li>
+
+                    <li>Lagrange's equation</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- FLUID MECHANICS -->
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Fluid Mechanics
+                </h3>
+
+                <ul>
+
+                    <li>Fluid properties</li>
+
+                    <li>Fluid statics</li>
+
+                    <li>Forces on submerged bodies</li>
+
+                    <li>Stability of floating bodies</li>
+
+                    <li>Control-volume analysis</li>
+
+                    <li>Mass, momentum and energy equations</li>
+
+                    <li>Fluid acceleration</li>
+
+                    <li>Continuity equation</li>
+
+                    <li>Momentum equation</li>
+
+                    <li>Bernoulli's equation</li>
+
+                    <li>Dimensional analysis</li>
+
+                    <li>Viscous incompressible flow</li>
+
+                    <li>Boundary layer theory</li>
+
+                    <li>Laminar and turbulent flow</li>
+
+                    <li>Flow through pipes</li>
+
+                    <li>Head losses</li>
+
+                    <li>Bends and fittings</li>
+
+                    <li>Basics of compressible flow</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- THERMODYNAMICS -->
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Thermodynamics
+                </h3>
+
+                <ul>
+
+                    <li>Thermodynamic systems and processes</li>
+
+                    <li>Properties of pure substances</li>
+
+                    <li>Ideal and real gases</li>
+
+                    <li>Zeroth law of thermodynamics</li>
+
+                    <li>First law of thermodynamics</li>
+
+                    <li>Work and heat calculations</li>
+
+                    <li>Second law of thermodynamics</li>
+
+                    <li>Thermodynamic property charts</li>
+
+                    <li>Thermodynamic tables</li>
+
+                    <li>Availability and irreversibility</li>
+
+                    <li>Thermodynamic relations</li>
+
+                    <li>Power cycles</li>
+
+                    <li>Gas and vapour cycles</li>
+
+                    <li>Regeneration and reheat</li>
+
+                    <li>Otto, Diesel and Dual cycles</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- HEAT TRANSFER -->
+
+            <div class="syllabus-card">
+
+                <h3>
+                    Heat Transfer
+                </h3>
+
+                <ul>
+
+                    <li>Conduction</li>
+
+                    <li>Convection</li>
+
+                    <li>Radiation</li>
+
+                    <li>One-dimensional conduction</li>
+
+                    <li>Thermal resistance</li>
+
+                    <li>Fins</li>
+
+                    <li>Transient conduction</li>
+
+                    <li>Lumped parameter analysis</li>
+
+                    <li>Convective heat transfer</li>
+
+                    <li>Heat transfer correlations</li>
+
+                    <li>Heat exchangers</li>
+
+                    <li>LMTD method</li>
+
+                    <li>NTU method</li>
+
+                    <li>Stefan-Boltzmann law</li>
+
+                    <li>Black and grey surfaces</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEACHING APPROACH
+===================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label">
+            Teaching Methodology
+        </div>
+
+        <h2 class="section-title">
+            Concept → Problem → Application
+        </h2>
+
+        <p class="section-description">
+            A structured approach designed for students preparing for
+            competitive engineering examinations.
+        </p>
+
+
+        <div class="approach-grid">
+
+
+            <div class="approach-card">
+
+                <div class="icon">01</div>
+
+                <h3>
+                    Conceptual Foundation
+                </h3>
+
+                <p>
+                    Build strong fundamentals before moving into
+                    advanced GATE-level problems.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="icon">02</div>
+
+                <h3>
+                    Mathematical Problem Solving
+                </h3>
+
+                <p>
+                    Develop systematic techniques for solving numerical,
+                    conceptual and multi-step problems.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="icon">03</div>
+
+                <h3>
+                    GATE-Oriented Practice
+                </h3>
+
+                <p>
+                    Practice previous-year questions, numerical problems,
+                    conceptual questions and exam-oriented applications.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="icon">04</div>
+
+                <h3>
+                    Derivation & Intuition
+                </h3>
+
+                <p>
+                    Understand why formulas work instead of relying
+                    entirely on memorization.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="icon">05</div>
+
+                <h3>
+                    Error Analysis
+                </h3>
+
+                <p>
+                    Identify common mistakes, incorrect assumptions and
+                    inefficient solution approaches.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="icon">06</div>
+
+                <h3>
+                    Exam Strategy
+                </h3>
+
+                <p>
+                    Improve accuracy, question selection, time management
+                    and numerical problem-solving speed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience" class="subjects">
+
+    <div class="container">
+
+        <div class="section-label">
+            Relevant Experience
+        </div>
+
+        <h2 class="section-title">
+            Teaching & Academic Experience
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    2019 – Present
+                </div>
+
+                <h3>
+                    Engineering Mathematics & Competitive Examination Faculty
+                </h3>
+
+                <p>
+                    Teaching Mathematics and Engineering Mathematics for
+                    undergraduate engineering students and competitive
+                    examinations including GATE, JEE and CAT.
+                    Focus areas include calculus, linear algebra,
+                    differential equations, probability, statistics,
+                    numerical methods and mathematical problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    IIT Madras • M.S. (Research)
+                </div>
+
+                <h3>
+                    Computational Materials Science Researcher
+                </h3>
+
+                <p>
+                    Conducted research involving mathematical modelling,
+                    computational methods, numerical analysis and
+                    scientific computing in Computational Materials Science.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    Academic & Competitive Examination Education
+                </div>
+
+                <h3>
+                    Mathematics & Physics Educator
+                </h3>
+
+                <p>
+                    Experience teaching students from school level through
+                    undergraduate engineering and competitive examination
+                    preparation.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label">
+            Academic Background
+        </div>
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <div class="education-card">
+
+            <h3>
+                Indian Institute of Technology Madras
+            </h3>
+
+            <p>
+                <strong>M.S. (Research) — Computational Materials Science</strong>
+            </p>
+
+            <p>
+                Research involving mathematical modelling,
+                computational methods, scientific computing and
+                numerical analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ATS KEYWORDS
+===================================================== -->
+
+<section class="keywords">
+
+    <div class="container">
+
+        <div class="section-label">
+            Professional Keywords
+        </div>
+
+        <h2 class="section-title">
+            GATE Faculty Expertise
+        </h2>
+
+        <p class="section-description">
+            Keywords relevant to GATE faculty recruitment, coaching
+            institutes, engineering education and academic profiles.
+        </p>
+
+
+        <div class="keyword-list">
+
+            <span class="keyword">GATE Faculty</span>
+
+            <span class="keyword">GATE Engineering Mathematics</span>
+
+            <span class="keyword">GATE Mechanical Engineering</span>
+
+            <span class="keyword">GATE Mathematics Faculty</span>
+
+            <span class="keyword">Engineering Mathematics</span>
+
+            <span class="keyword">Mechanical Engineering</span>
+
+            <span class="keyword">Engineering Mechanics</span>
+
+            <span class="keyword">Fluid Mechanics</span>
+
+            <span class="keyword">Thermodynamics</span>
+
+            <span class="keyword">Heat Transfer</span>
+
+            <span class="keyword">Applied Mechanics</span>
+
+            <span class="keyword">Linear Algebra</span>
+
+            <span class="keyword">Calculus</span>
+
+            <span class="keyword">Differential Equations</span>
+
+            <span class="keyword">Vector Calculus</span>
+
+            <span class="keyword">Probability & Statistics</span>
+
+            <span class="keyword">Numerical Methods</span>
+
+            <span class="keyword">Complex Analysis</span>
+
+            <span class="keyword">Mathematical Modelling</span>
+
+            <span class="keyword">Problem Solving</span>
+
+            <span class="keyword">Competitive Examination Preparation</span>
+
+            <span class="keyword">GATE Coaching</span>
+
+            <span class="keyword">GATE Preparation</span>
+
+            <span class="keyword">Previous Year Questions</span>
+
+            <span class="keyword">Numerical Ability</span>
+
+            <span class="keyword">Conceptual Learning</span>
+
+            <span class="keyword">Engineering Education</span>
+
+            <span class="keyword">IIT Madras Alumni</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>
+            Preparing for GATE?
+        </h2>
+
+        <p>
+            Build strong fundamentals, master engineering mathematics
+            and develop the problem-solving skills required for
+            competitive engineering examinations.
+        </p>
+
+        <a
+            href="mailto:skillstation.academy@gmail.com"
+            class="btn btn-primary"
+        >
+            Contact Faculty
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Elankovan Gopal</strong>
+        · GATE Faculty · Engineering Mathematics & Mechanical Engineering
+    </p>
+
+    <p>
+        GATE syllabus references based on the official GATE 2026 syllabus.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
