@@ -2,39 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        Elankovan Gopal | GATE Faculty | Engineering Mathematics & Mechanical Engineering
+        Elankovan Gopal | GMAT Faculty | Quantitative Reasoning & Data Insights
     </title>
 
     <meta name="description"
-        content="GATE Faculty specializing in Engineering Mathematics, Mechanical Engineering, Applied Mechanics, Fluid Mechanics and Thermodynamics. IIT Madras alumnus with 7+ years of teaching experience.">
+        content="GMAT Faculty specializing in Quantitative Reasoning, Data Insights, Problem Solving, Data Sufficiency, Algebra, Geometry, Statistics and GMAT preparation. IIT Madras alumnus with 7+ years of teaching experience.">
 
     <meta name="keywords"
-        content="GATE Faculty, GATE Engineering Mathematics Faculty, GATE Mechanical Engineering Faculty,
-        GATE Mathematics, GATE ME, GATE Mechanical, Engineering Mathematics,
-        GATE Mathematics Faculty Chennai, GATE Faculty Bangalore,
-        GATE Coaching, GATE Preparation, GATE Exam Faculty,
-        Engineering Mathematics Teacher, Mechanical Engineering Teacher,
-        Fluid Mechanics, Thermodynamics, Engineering Mechanics,
-        Applied Mechanics, Numerical Methods, Differential Equations,
-        IIT Madras Alumni, GATE Mentor, GATE Online Classes">
+        content="GMAT Faculty, GMAT Quant Faculty, GMAT Quantitative Reasoning,
+        GMAT Data Insights Faculty, GMAT Coaching, GMAT Preparation,
+        GMAT Teacher, GMAT Tutor, GMAT Mathematics,
+        GMAT Quantitative Aptitude, GMAT Data Sufficiency,
+        GMAT Problem Solving, GMAT Statistics, GMAT Algebra,
+        GMAT Geometry, GMAT Word Problems, GMAT Online Faculty,
+        GMAT Faculty India, GMAT Faculty Bangalore,
+        GMAT Faculty Chennai, MBA Entrance Faculty,
+        CAT Quant Faculty, Quantitative Aptitude Faculty,
+        IIT Madras Alumni, Mathematics Faculty">
 
     <meta name="author" content="Elankovan Gopal">
 
     <style>
 
         :root {
-            --primary: #0756a3;
-            --primary-dark: #063b73;
-            --primary-light: #eaf4ff;
-            --secondary: #0d78d5;
+            --primary: #174ea6;
+            --primary-dark: #103b7d;
+            --primary-light: #eaf2ff;
+            --secondary: #2d6dcc;
             --text: #172033;
-            --muted: #607086;
+            --muted: #617087;
             --white: #ffffff;
-            --border: #dce8f5;
+            --border: #dce6f3;
             --background: #f6f9fd;
         }
 
@@ -67,7 +68,7 @@
             color: inherit;
         }
 
-        /* ---------------- NAVIGATION ---------------- */
+        /* ================= NAVIGATION ================= */
 
         nav {
             position: sticky;
@@ -100,8 +101,10 @@
         .nav-links {
             display: flex;
             gap: 28px;
+
             font-size: 14px;
             font-weight: 600;
+
             color: var(--muted);
         }
 
@@ -109,15 +112,15 @@
             color: var(--primary);
         }
 
-        /* ---------------- HERO ---------------- */
+        /* ================= HERO ================= */
 
         .hero {
             background:
                 linear-gradient(
                     135deg,
-                    #063b73 0%,
-                    #0756a3 50%,
-                    #0d78d5 100%
+                    #103b7d 0%,
+                    #174ea6 50%,
+                    #2d6dcc 100%
                 );
 
             color: white;
@@ -130,6 +133,7 @@
 
             display: grid;
             grid-template-columns: 1.5fr 1fr;
+
             gap: 60px;
             align-items: center;
         }
@@ -152,32 +156,40 @@
         .hero h1 {
             font-size: clamp(38px, 6vw, 64px);
             line-height: 1.08;
+
             margin-bottom: 20px;
         }
 
         .hero h2 {
             font-size: 24px;
             font-weight: 500;
+
             margin-bottom: 20px;
-            color: #dceeff;
+
+            color: #e1edff;
         }
 
         .hero p {
             max-width: 720px;
-            color: #e8f4ff;
+
+            color: #e9f2ff;
             font-size: 17px;
         }
 
         .hero-buttons {
             display: flex;
             gap: 14px;
+
             margin-top: 32px;
+
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
+
             padding: 12px 22px;
+
             border-radius: 8px;
 
             font-weight: 700;
@@ -200,16 +212,18 @@
             transform: translateY(-2px);
         }
 
-        /* ---------------- PROFILE CARD ---------------- */
+        /* ================= PROFILE CARD ================= */
 
         .profile-card {
             background: white;
             color: var(--text);
 
             border-radius: 18px;
+
             padding: 32px;
 
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.15);
         }
 
         .profile-card .initial {
@@ -239,12 +253,15 @@
         .profile-card .role {
             color: var(--primary);
             font-weight: 700;
+
             margin-bottom: 20px;
         }
 
         .profile-item {
             padding: 10px 0;
+
             border-bottom: 1px solid var(--border);
+
             font-size: 14px;
         }
 
@@ -252,7 +269,7 @@
             border-bottom: none;
         }
 
-        /* ---------------- GENERAL SECTIONS ---------------- */
+        /* ================= SECTIONS ================= */
 
         section {
             padding: 80px 24px;
@@ -265,8 +282,11 @@
 
         .section-label {
             color: var(--primary);
+
             text-transform: uppercase;
+
             letter-spacing: 1.5px;
+
             font-weight: 800;
             font-size: 12px;
 
@@ -276,54 +296,69 @@
         .section-title {
             font-size: 34px;
             line-height: 1.2;
+
             margin-bottom: 16px;
         }
 
         .section-description {
             max-width: 760px;
+
             color: var(--muted);
+
             margin-bottom: 40px;
         }
 
-        /* ---------------- ABOUT ---------------- */
+        /* ================= ABOUT ================= */
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1.3fr 1fr;
+
             gap: 50px;
+
             align-items: start;
         }
 
         .about-text {
             color: var(--muted);
+
             font-size: 16px;
         }
 
         .stats {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 15px;
         }
 
         .stat {
             background: white;
+
             border: 1px solid var(--border);
+
             border-radius: 12px;
+
             padding: 22px;
         }
 
         .stat strong {
             display: block;
+
             color: var(--primary);
+
             font-size: 28px;
         }
 
         .stat span {
             color: var(--muted);
+
             font-size: 13px;
         }
 
-        /* ---------------- SUBJECTS ---------------- */
+        /* ================= SUBJECTS ================= */
 
         .subjects {
             background: white;
@@ -331,147 +366,133 @@
 
         .subject-grid {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 24px;
         }
 
         .subject-card {
             border: 1px solid var(--border);
+
             border-radius: 16px;
+
             padding: 30px;
 
-            background: linear-gradient(
-                180deg,
-                #ffffff,
-                #f8fbff
-            );
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffffff,
+                    #f8fbff
+                );
         }
 
         .subject-number {
             color: var(--primary);
+
             font-size: 13px;
+
             font-weight: 800;
         }
 
         .subject-card h3 {
             font-size: 24px;
+
             margin: 8px 0 10px;
         }
 
         .subject-card p {
             color: var(--muted);
+
             margin-bottom: 18px;
         }
 
         .topic-tags {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
         }
 
         .topic-tag {
             background: var(--primary-light);
+
             color: var(--primary-dark);
 
             padding: 6px 10px;
+
             border-radius: 6px;
 
             font-size: 12px;
+
             font-weight: 600;
         }
 
-        /* ---------------- SYLLABUS ---------------- */
+        /* ================= GMAT FRAMEWORK ================= */
 
-        .syllabus-grid {
+        .framework-grid {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 22px;
         }
 
-        .syllabus-card {
+        .framework-card {
             background: white;
+
             border: 1px solid var(--border);
 
             border-radius: 14px;
+
             padding: 26px;
         }
 
-        .syllabus-card h3 {
+        .framework-card h3 {
             color: var(--primary-dark);
+
             margin-bottom: 15px;
         }
 
-        ul {
+        .framework-card ul {
             padding-left: 20px;
         }
 
-        li {
+        .framework-card li {
             margin-bottom: 7px;
+
             color: var(--muted);
         }
 
-        /* ---------------- EXPERIENCE ---------------- */
-
-        .timeline {
-            border-left: 3px solid #bcd8f2;
-            padding-left: 28px;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 35px;
-        }
-
-        .timeline-item::before {
-            content: "";
-
-            position: absolute;
-            left: -38px;
-            top: 5px;
-
-            width: 14px;
-            height: 14px;
-
-            background: var(--primary);
-            border-radius: 50%;
-
-            border: 3px solid white;
-            box-shadow: 0 0 0 2px #bcd8f2;
-        }
-
-        .timeline-item h3 {
-            margin-bottom: 4px;
-        }
-
-        .timeline-item .date {
-            color: var(--primary);
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .timeline-item p {
-            color: var(--muted);
-        }
-
-        /* ---------------- TEACHING APPROACH ---------------- */
+        /* ================= TEACHING ================= */
 
         .approach-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 20px;
         }
 
         .approach-card {
             background: white;
+
             border: 1px solid var(--border);
+
             padding: 28px;
+
             border-radius: 14px;
         }
 
-        .approach-card .icon {
-            font-size: 28px;
-            margin-bottom: 12px;
+        .approach-card .number {
+            color: var(--primary);
+
+            font-size: 25px;
+
+            font-weight: 800;
+
+            margin-bottom: 10px;
         }
 
         .approach-card h3 {
@@ -480,82 +501,153 @@
 
         .approach-card p {
             color: var(--muted);
+
             font-size: 14px;
         }
 
-        /* ---------------- KEYWORDS ---------------- */
+        /* ================= EXPERIENCE ================= */
 
-        .keywords {
-            background: #edf6ff;
+        .timeline {
+            border-left: 3px solid #c6d9f1;
+
+            padding-left: 28px;
         }
 
-        .keyword-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 9px;
+        .timeline-item {
+            position: relative;
+
+            margin-bottom: 35px;
         }
 
-        .keyword {
-            background: white;
-            border: 1px solid #cfe2f5;
+        .timeline-item::before {
+            content: "";
 
-            padding: 8px 13px;
-            border-radius: 7px;
+            position: absolute;
+
+            left: -38px;
+            top: 5px;
+
+            width: 14px;
+            height: 14px;
+
+            background: var(--primary);
+
+            border-radius: 50%;
+
+            border: 3px solid white;
+
+            box-shadow:
+                0 0 0 2px #c6d9f1;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 4px;
+        }
+
+        .timeline-item .date {
+            color: var(--primary);
 
             font-size: 13px;
-            color: var(--primary-dark);
-            font-weight: 600;
+
+            font-weight: 700;
+
+            margin-bottom: 8px;
         }
 
-        /* ---------------- EDUCATION ---------------- */
+        .timeline-item p {
+            color: var(--muted);
+        }
+
+        /* ================= EDUCATION ================= */
 
         .education-card {
             background: white;
+
             border: 1px solid var(--border);
+
             padding: 30px;
+
             border-radius: 15px;
         }
 
         .education-card h3 {
             color: var(--primary);
+
+            margin-bottom: 5px;
         }
 
         .education-card p {
             color: var(--muted);
         }
 
-        /* ---------------- CTA ---------------- */
+        /* ================= KEYWORDS ================= */
+
+        .keywords {
+            background: #edf5ff;
+        }
+
+        .keyword-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+        }
+
+        .keyword {
+            background: white;
+
+            border: 1px solid #cfe0f4;
+
+            padding: 8px 13px;
+
+            border-radius: 7px;
+
+            font-size: 13px;
+
+            color: var(--primary-dark);
+
+            font-weight: 600;
+        }
+
+        /* ================= CTA ================= */
 
         .cta {
             background:
                 linear-gradient(
                     135deg,
-                    #063b73,
-                    #0756a3
+                    #103b7d,
+                    #174ea6
                 );
 
             color: white;
+
             text-align: center;
         }
 
         .cta h2 {
             font-size: 38px;
+
             margin-bottom: 15px;
         }
 
         .cta p {
-            color: #dceeff;
+            color: #dceaff;
+
             max-width: 650px;
+
             margin: 0 auto 25px;
         }
 
-        /* ---------------- FOOTER ---------------- */
+        /* ================= FOOTER ================= */
 
         footer {
             background: #071d35;
+
             color: #9eb6cc;
 
             padding: 30px 24px;
+
             text-align: center;
 
             font-size: 13px;
@@ -565,7 +657,7 @@
             color: white;
         }
 
-        /* ---------------- RESPONSIVE ---------------- */
+        /* ================= RESPONSIVE ================= */
 
         @media (max-width: 800px) {
 
@@ -576,7 +668,7 @@
             .hero-container,
             .about-grid,
             .subject-grid,
-            .syllabus-grid {
+            .framework-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -614,16 +706,16 @@
     <div class="nav-container">
 
         <a href="#top" class="logo">
-            GATE Faculty
+            GMAT Faculty
         </a>
 
         <div class="nav-links">
 
             <a href="#about">Profile</a>
 
-            <a href="#subjects">Subjects</a>
+            <a href="#subjects">GMAT</a>
 
-            <a href="#syllabus">Syllabus</a>
+            <a href="#framework">Topics</a>
 
             <a href="#experience">Experience</a>
 
@@ -644,10 +736,11 @@
 
     <div class="hero-container">
 
+
         <div>
 
             <span class="badge">
-                GATE FACULTY • ENGINEERING EDUCATION
+                GMAT FACULTY • QUANTITATIVE REASONING
             </span>
 
             <h1>
@@ -655,24 +748,24 @@
             </h1>
 
             <h2>
-                GATE Faculty — Engineering Mathematics & Mechanical Engineering
+                GMAT Faculty — Quantitative Reasoning & Data Insights
             </h2>
 
             <p>
-                IIT Madras alumnus and experienced engineering mathematics
-                educator specializing in GATE preparation, mathematical
-                problem solving, applied mechanics and core mechanical
-                engineering subjects.
+                IIT Madras alumnus and experienced mathematics educator
+                specializing in quantitative aptitude, logical problem
+                solving, data analysis and competitive examination
+                preparation.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#syllabus" class="btn btn-primary">
-                    View GATE Syllabus
+                <a href="#framework" class="btn btn-primary">
+                    Explore GMAT Topics
                 </a>
 
                 <a href="#contact" class="btn btn-outline">
-                    Get in Touch
+                    Contact Faculty
                 </a>
 
             </div>
@@ -691,17 +784,17 @@
             </h3>
 
             <div class="role">
-                GATE Faculty & Engineering Educator
+                GMAT Faculty & Quantitative Aptitude Educator
             </div>
 
             <div class="profile-item">
-                <strong>Specialization:</strong>
-                Engineering Mathematics
+                <strong>Primary:</strong>
+                GMAT Quantitative Reasoning
             </div>
 
             <div class="profile-item">
-                <strong>Additional Subjects:</strong>
-                Mechanical Engineering
+                <strong>Additional:</strong>
+                Data Insights & Problem Solving
             </div>
 
             <div class="profile-item">
@@ -715,8 +808,8 @@
             </div>
 
             <div class="profile-item">
-                <strong>Focus:</strong>
-                GATE • Engineering Mathematics • Mechanical Engineering
+                <strong>Related:</strong>
+                CAT Quantitative Aptitude
             </div>
 
         </div>
@@ -739,35 +832,37 @@
         </div>
 
         <h2 class="section-title">
-            Engineering Mathematics with an Engineering Mindset
+            Mathematics, Reasoning & Structured Problem Solving
         </h2>
+
 
         <div class="about-grid">
 
             <div class="about-text">
 
                 <p>
-                    Elankovan Gopal is an IIT Madras alumnus and engineering
-                    educator with extensive experience teaching mathematics
-                    from undergraduate engineering level to competitive
-                    examinations.
+                    Elankovan Gopal is an IIT Madras alumnus and mathematics
+                    educator with more than seven years of experience
+                    teaching mathematics and quantitative aptitude for
+                    competitive examinations.
                 </p>
 
                 <br>
 
                 <p>
-                    His teaching approach focuses on developing conceptual
-                    clarity, mathematical intuition and problem-solving
-                    ability rather than relying only on formula memorization.
+                    His teaching approach combines mathematical fundamentals
+                    with structured reasoning, allowing students to solve
+                    quantitative problems efficiently rather than relying
+                    exclusively on memorized formulas.
                 </p>
 
                 <br>
 
                 <p>
-                    For GATE aspirants, the focus is on understanding the
-                    underlying concepts, identifying recurring problem
-                    patterns, solving numerical problems efficiently and
-                    developing exam-oriented problem-solving strategies.
+                    GMAT preparation focuses on quantitative reasoning,
+                    data interpretation, algebra, arithmetic, geometry,
+                    statistics, word problems, logical reasoning and
+                    time-efficient problem-solving strategies.
                 </p>
 
             </div>
@@ -786,13 +881,13 @@
                 </div>
 
                 <div class="stat">
-                    <strong>GATE</strong>
-                    <span>Engineering Mathematics</span>
+                    <strong>GMAT</strong>
+                    <span>Quantitative Reasoning</span>
                 </div>
 
                 <div class="stat">
-                    <strong>ME</strong>
-                    <span>Mechanical Engineering</span>
+                    <strong>DI</strong>
+                    <span>Data Insights</span>
                 </div>
 
             </div>
@@ -813,121 +908,125 @@
     <div class="container">
 
         <div class="section-label">
-            GATE Subjects
+            GMAT Preparation
         </div>
 
         <h2 class="section-title">
-            Subjects Offered
+            Core Areas
         </h2>
 
         <p class="section-description">
-            Focused instruction for GATE aspirants in Engineering Mathematics
-            and selected core Mechanical Engineering subjects.
+            Focused preparation in the quantitative and analytical
+            components of the GMAT.
         </p>
 
 
         <div class="subject-grid">
 
 
-            <!-- ENGINEERING MATHEMATICS -->
+            <!-- QUANT -->
 
             <div class="subject-card">
 
                 <div class="subject-number">
-                    SUBJECT 01
+                    AREA 01
                 </div>
 
                 <h3>
-                    Engineering Mathematics
+                    Quantitative Reasoning
                 </h3>
 
                 <p>
-                    Complete GATE Engineering Mathematics preparation with
-                    concept building, mathematical techniques, numerical
-                    problem solving and previous-year question analysis.
+                    Build strong mathematical fundamentals and learn
+                    efficient approaches for solving GMAT quantitative
+                    problems under time constraints.
                 </p>
 
                 <div class="topic-tags">
 
                     <span class="topic-tag">
-                        Linear Algebra
+                        Arithmetic
                     </span>
 
                     <span class="topic-tag">
-                        Calculus
+                        Algebra
                     </span>
 
                     <span class="topic-tag">
-                        Differential Equations
+                        Number Properties
                     </span>
 
                     <span class="topic-tag">
-                        Complex Variables
+                        Ratios
                     </span>
 
                     <span class="topic-tag">
-                        Probability
+                        Percentages
+                    </span>
+
+                    <span class="topic-tag">
+                        Geometry
+                    </span>
+
+                    <span class="topic-tag">
+                        Word Problems
                     </span>
 
                     <span class="topic-tag">
                         Statistics
                     </span>
 
-                    <span class="topic-tag">
-                        Numerical Methods
-                    </span>
-
-                    <span class="topic-tag">
-                        Vector Calculus
-                    </span>
-
                 </div>
 
             </div>
 
 
-            <!-- MECHANICAL -->
+            <!-- DATA INSIGHTS -->
 
             <div class="subject-card">
 
                 <div class="subject-number">
-                    SUBJECT 02
+                    AREA 02
                 </div>
 
                 <h3>
-                    Mechanical Engineering
+                    Data Insights
                 </h3>
 
                 <p>
-                    Selected core Mechanical Engineering topics with emphasis
-                    on fundamentals, derivations, numerical problem solving
-                    and GATE-oriented applications.
+                    Develop the ability to interpret, analyze and reason
+                    with quantitative information presented in different
+                    formats.
                 </p>
 
                 <div class="topic-tags">
 
                     <span class="topic-tag">
-                        Engineering Mechanics
+                        Data Interpretation
                     </span>
 
                     <span class="topic-tag">
-                        Fluid Mechanics
+                        Data Sufficiency
                     </span>
 
                     <span class="topic-tag">
-                        Thermodynamics
+                        Tables
                     </span>
 
                     <span class="topic-tag">
-                        Heat Transfer
+                        Graphs
                     </span>
 
                     <span class="topic-tag">
-                        Applied Mechanics
+                        Charts
                     </span>
 
                     <span class="topic-tag">
-                        Thermal Sciences
+                        Multi-Source Reasoning
+                    </span>
+
+                    <span class="topic-tag">
+                        Two-Part Analysis
                     </span>
 
                 </div>
@@ -942,438 +1041,232 @@
 
 
 <!-- =====================================================
-     ENGINEERING MATHEMATICS SYLLABUS
+     GMAT TOPICS
 ===================================================== -->
 
-<section id="syllabus">
+<section id="framework">
 
     <div class="container">
 
         <div class="section-label">
-            GATE 2026 Syllabus
+            GMAT Quantitative Preparation
         </div>
 
         <h2 class="section-title">
-            Engineering Mathematics
+            Quantitative Reasoning Topics
         </h2>
 
         <p class="section-description">
-            GATE Mechanical Engineering Engineering Mathematics topics.
+            A structured topic-wise approach to developing mathematical
+            reasoning and problem-solving ability.
         </p>
 
 
-        <div class="syllabus-grid">
+        <div class="framework-grid">
 
 
-            <div class="syllabus-card">
+            <!-- ARITHMETIC -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Linear Algebra
+                    Arithmetic & Number Properties
                 </h3>
 
                 <ul>
 
-                    <li>Matrix algebra</li>
+                    <li>Integers and rational numbers</li>
 
-                    <li>Systems of linear equations</li>
+                    <li>Prime numbers</li>
 
-                    <li>Rank and matrix properties</li>
+                    <li>Factors and multiples</li>
 
-                    <li>Eigenvalues and eigenvectors</li>
+                    <li>Divisibility</li>
+
+                    <li>LCM and GCD</li>
+
+                    <li>Remainders</li>
+
+                    <li>Fractions and decimals</li>
+
+                    <li>Percentages</li>
+
+                    <li>Ratios and proportions</li>
+
+                    <li>Rates and averages</li>
+
+                    <li>Exponents and roots</li>
 
                 </ul>
 
             </div>
 
 
-            <div class="syllabus-card">
+            <!-- ALGEBRA -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Calculus
+                    Algebra
                 </h3>
 
                 <ul>
 
-                    <li>Functions of a single variable</li>
+                    <li>Algebraic expressions</li>
 
-                    <li>Limits, continuity and differentiability</li>
+                    <li>Linear equations</li>
 
-                    <li>Mean value theorems</li>
+                    <li>Quadratic equations</li>
 
-                    <li>Definite and improper integrals</li>
+                    <li>Simultaneous equations</li>
 
-                    <li>Double and triple integrals</li>
+                    <li>Inequalities</li>
 
-                    <li>Partial and total derivatives</li>
+                    <li>Absolute values</li>
 
-                    <li>Taylor series</li>
+                    <li>Sequences and patterns</li>
 
-                    <li>Maxima and minima</li>
+                    <li>Functions</li>
 
-                    <li>Fourier series</li>
+                    <li>Algebraic manipulation</li>
+
+                    <li>Equations with parameters</li>
 
                 </ul>
 
             </div>
 
 
-            <div class="syllabus-card">
+            <!-- WORD PROBLEMS -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Vector Calculus
+                    Word Problems
                 </h3>
 
                 <ul>
 
-                    <li>Gradient</li>
+                    <li>Work and rate problems</li>
 
-                    <li>Divergence</li>
+                    <li>Distance, speed and time</li>
 
-                    <li>Curl</li>
+                    <li>Mixtures and concentrations</li>
 
-                    <li>Vector identities</li>
+                    <li>Profit and loss</li>
 
-                    <li>Directional derivatives</li>
+                    <li>Simple and compound interest</li>
 
-                    <li>Line integrals</li>
+                    <li>Percentage change</li>
 
-                    <li>Surface integrals</li>
+                    <li>Ratio-based problems</li>
 
-                    <li>Volume integrals</li>
+                    <li>Average and weighted average</li>
 
-                    <li>Gauss, Stokes and Green's theorems</li>
+                    <li>Growth and decay</li>
+
+                    <li>Optimization-style problems</li>
 
                 </ul>
 
             </div>
 
 
-            <div class="syllabus-card">
+            <!-- GEOMETRY -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Differential Equations
+                    Geometry & Coordinate Geometry
                 </h3>
 
                 <ul>
 
-                    <li>First-order linear equations</li>
+                    <li>Lines and angles</li>
 
-                    <li>First-order nonlinear equations</li>
+                    <li>Triangles</li>
 
-                    <li>Higher-order linear ODEs</li>
+                    <li>Quadrilaterals</li>
 
-                    <li>Constant coefficient equations</li>
+                    <li>Polygons</li>
 
-                    <li>Euler-Cauchy equation</li>
+                    <li>Circles</li>
 
-                    <li>Initial and boundary value problems</li>
+                    <li>Perimeter and area</li>
 
-                    <li>Laplace transforms</li>
+                    <li>Volume and surface area</li>
 
-                    <li>Heat equation</li>
+                    <li>Coordinate geometry</li>
 
-                    <li>Wave equation</li>
+                    <li>Slope and distance</li>
 
-                    <li>Laplace equation</li>
+                    <li>Geometric reasoning</li>
 
                 </ul>
 
             </div>
 
 
-            <div class="syllabus-card">
+            <!-- STATISTICS -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Complex Variables
+                    Statistics & Probability
                 </h3>
 
                 <ul>
 
-                    <li>Analytic functions</li>
+                    <li>Mean and median</li>
 
-                    <li>Cauchy-Riemann equations</li>
+                    <li>Weighted averages</li>
 
-                    <li>Cauchy's integral theorem</li>
+                    <li>Range</li>
 
-                    <li>Cauchy's integral formula</li>
+                    <li>Data distribution</li>
 
-                    <li>Taylor series</li>
+                    <li>Basic probability</li>
 
-                    <li>Laurent series</li>
+                    <li>Counting principles</li>
+
+                    <li>Combinations</li>
+
+                    <li>Permutations</li>
+
+                    <li>Expected value</li>
 
                 </ul>
 
             </div>
 
 
-            <div class="syllabus-card">
+            <!-- DATA INSIGHTS -->
+
+            <div class="framework-card">
 
                 <h3>
-                    Probability & Statistics
+                    Data Insights & Reasoning
                 </h3>
 
                 <ul>
 
-                    <li>Probability fundamentals</li>
+                    <li>Data interpretation</li>
 
-                    <li>Sampling theorems</li>
+                    <li>Tables</li>
 
-                    <li>Conditional probability</li>
+                    <li>Charts and graphs</li>
 
-                    <li>Mean, median and mode</li>
+                    <li>Data comparison</li>
 
-                    <li>Standard deviation</li>
+                    <li>Data sufficiency</li>
 
-                    <li>Random variables</li>
+                    <li>Multi-source reasoning</li>
 
-                    <li>Binomial distribution</li>
+                    <li>Two-part analysis</li>
 
-                    <li>Poisson distribution</li>
+                    <li>Quantitative comparison</li>
 
-                    <li>Normal distribution</li>
-
-                </ul>
-
-            </div>
-
-
-            <div class="syllabus-card">
-
-                <h3>
-                    Numerical Methods
-                </h3>
-
-                <ul>
-
-                    <li>Linear algebraic equations</li>
-
-                    <li>Non-linear algebraic equations</li>
-
-                    <li>Trapezoidal integration</li>
-
-                    <li>Simpson's rule</li>
-
-                    <li>Single-step methods</li>
-
-                    <li>Multi-step methods</li>
-
-                    <li>Numerical solutions of differential equations</li>
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     MECHANICAL ENGINEERING
-===================================================== -->
-
-<section class="subjects">
-
-    <div class="container">
-
-        <div class="section-label">
-            GATE Mechanical Engineering
-        </div>
-
-        <h2 class="section-title">
-            Core Mechanical Engineering Topics
-        </h2>
-
-        <p class="section-description">
-            Focused preparation in Engineering Mechanics, Fluid Mechanics
-            and Thermodynamics.
-        </p>
-
-
-        <div class="syllabus-grid">
-
-
-            <!-- ENGINEERING MECHANICS -->
-
-            <div class="syllabus-card">
-
-                <h3>
-                    Engineering Mechanics
-                </h3>
-
-                <ul>
-
-                    <li>Free-body diagrams</li>
-
-                    <li>Equilibrium of rigid bodies</li>
-
-                    <li>Friction and its applications</li>
-
-                    <li>Rolling friction</li>
-
-                    <li>Belt-pulley systems</li>
-
-                    <li>Brakes and clutches</li>
-
-                    <li>Screw jack and wedge problems</li>
-
-                    <li>Trusses and frames</li>
-
-                    <li>Virtual work</li>
-
-                    <li>Kinematics of rigid bodies</li>
-
-                    <li>Dynamics of rigid bodies</li>
-
-                    <li>Impulse and momentum</li>
-
-                    <li>Energy formulations</li>
-
-                    <li>Lagrange's equation</li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- FLUID MECHANICS -->
-
-            <div class="syllabus-card">
-
-                <h3>
-                    Fluid Mechanics
-                </h3>
-
-                <ul>
-
-                    <li>Fluid properties</li>
-
-                    <li>Fluid statics</li>
-
-                    <li>Forces on submerged bodies</li>
-
-                    <li>Stability of floating bodies</li>
-
-                    <li>Control-volume analysis</li>
-
-                    <li>Mass, momentum and energy equations</li>
-
-                    <li>Fluid acceleration</li>
-
-                    <li>Continuity equation</li>
-
-                    <li>Momentum equation</li>
-
-                    <li>Bernoulli's equation</li>
-
-                    <li>Dimensional analysis</li>
-
-                    <li>Viscous incompressible flow</li>
-
-                    <li>Boundary layer theory</li>
-
-                    <li>Laminar and turbulent flow</li>
-
-                    <li>Flow through pipes</li>
-
-                    <li>Head losses</li>
-
-                    <li>Bends and fittings</li>
-
-                    <li>Basics of compressible flow</li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- THERMODYNAMICS -->
-
-            <div class="syllabus-card">
-
-                <h3>
-                    Thermodynamics
-                </h3>
-
-                <ul>
-
-                    <li>Thermodynamic systems and processes</li>
-
-                    <li>Properties of pure substances</li>
-
-                    <li>Ideal and real gases</li>
-
-                    <li>Zeroth law of thermodynamics</li>
-
-                    <li>First law of thermodynamics</li>
-
-                    <li>Work and heat calculations</li>
-
-                    <li>Second law of thermodynamics</li>
-
-                    <li>Thermodynamic property charts</li>
-
-                    <li>Thermodynamic tables</li>
-
-                    <li>Availability and irreversibility</li>
-
-                    <li>Thermodynamic relations</li>
-
-                    <li>Power cycles</li>
-
-                    <li>Gas and vapour cycles</li>
-
-                    <li>Regeneration and reheat</li>
-
-                    <li>Otto, Diesel and Dual cycles</li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- HEAT TRANSFER -->
-
-            <div class="syllabus-card">
-
-                <h3>
-                    Heat Transfer
-                </h3>
-
-                <ul>
-
-                    <li>Conduction</li>
-
-                    <li>Convection</li>
-
-                    <li>Radiation</li>
-
-                    <li>One-dimensional conduction</li>
-
-                    <li>Thermal resistance</li>
-
-                    <li>Fins</li>
-
-                    <li>Transient conduction</li>
-
-                    <li>Lumped parameter analysis</li>
-
-                    <li>Convective heat transfer</li>
-
-                    <li>Heat transfer correlations</li>
-
-                    <li>Heat exchangers</li>
-
-                    <li>LMTD method</li>
-
-                    <li>NTU method</li>
-
-                    <li>Stefan-Boltzmann law</li>
-
-                    <li>Black and grey surfaces</li>
+                    <li>Logical analysis</li>
 
                 </ul>
 
@@ -1390,7 +1283,7 @@
      TEACHING APPROACH
 ===================================================== -->
 
-<section>
+<section class="subjects">
 
     <div class="container">
 
@@ -1399,12 +1292,12 @@
         </div>
 
         <h2 class="section-title">
-            Concept → Problem → Application
+            Concept → Reasoning → Speed → Accuracy
         </h2>
 
         <p class="section-description">
-            A structured approach designed for students preparing for
-            competitive engineering examinations.
+            A structured approach designed for students targeting
+            competitive GMAT scores.
         </p>
 
 
@@ -1413,15 +1306,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">01</div>
+                <div class="number">
+                    01
+                </div>
 
                 <h3>
-                    Conceptual Foundation
+                    Diagnose
                 </h3>
 
                 <p>
-                    Build strong fundamentals before moving into
-                    advanced GATE-level problems.
+                    Identify mathematical strengths, weaknesses and
+                    recurring error patterns.
                 </p>
 
             </div>
@@ -1429,15 +1324,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">02</div>
+                <div class="number">
+                    02
+                </div>
 
                 <h3>
-                    Mathematical Problem Solving
+                    Build Fundamentals
                 </h3>
 
                 <p>
-                    Develop systematic techniques for solving numerical,
-                    conceptual and multi-step problems.
+                    Strengthen arithmetic, algebra, geometry, statistics
+                    and quantitative reasoning fundamentals.
                 </p>
 
             </div>
@@ -1445,15 +1342,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">03</div>
+                <div class="number">
+                    03
+                </div>
 
                 <h3>
-                    GATE-Oriented Practice
+                    Develop Strategies
                 </h3>
 
                 <p>
-                    Practice previous-year questions, numerical problems,
-                    conceptual questions and exam-oriented applications.
+                    Learn multiple approaches and identify the most
+                    efficient method for different question types.
                 </p>
 
             </div>
@@ -1461,15 +1360,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">04</div>
+                <div class="number">
+                    04
+                </div>
 
                 <h3>
-                    Derivation & Intuition
+                    Practice
                 </h3>
 
                 <p>
-                    Understand why formulas work instead of relying
-                    entirely on memorization.
+                    Solve progressively challenging quantitative and
+                    data reasoning problems.
                 </p>
 
             </div>
@@ -1477,15 +1378,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">05</div>
+                <div class="number">
+                    05
+                </div>
 
                 <h3>
-                    Error Analysis
+                    Analyze Errors
                 </h3>
 
                 <p>
-                    Identify common mistakes, incorrect assumptions and
-                    inefficient solution approaches.
+                    Understand why an answer was incorrect and develop
+                    methods to prevent repeated mistakes.
                 </p>
 
             </div>
@@ -1493,15 +1396,17 @@
 
             <div class="approach-card">
 
-                <div class="icon">06</div>
+                <div class="number">
+                    06
+                </div>
 
                 <h3>
-                    Exam Strategy
+                    Improve Speed & Accuracy
                 </h3>
 
                 <p>
-                    Improve accuracy, question selection, time management
-                    and numerical problem-solving speed.
+                    Develop efficient mental mathematics, estimation,
+                    question selection and time-management strategies.
                 </p>
 
             </div>
@@ -1517,7 +1422,7 @@
      EXPERIENCE
 ===================================================== -->
 
-<section id="experience" class="subjects">
+<section id="experience">
 
     <div class="container">
 
@@ -1540,35 +1445,15 @@
                 </div>
 
                 <h3>
-                    Engineering Mathematics & Competitive Examination Faculty
+                    Mathematics & Quantitative Aptitude Faculty
                 </h3>
 
                 <p>
-                    Teaching Mathematics and Engineering Mathematics for
-                    undergraduate engineering students and competitive
-                    examinations including GATE, JEE and CAT.
-                    Focus areas include calculus, linear algebra,
-                    differential equations, probability, statistics,
-                    numerical methods and mathematical problem solving.
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="date">
-                    IIT Madras • M.S. (Research)
-                </div>
-
-                <h3>
-                    Computational Materials Science Researcher
-                </h3>
-
-                <p>
-                    Conducted research involving mathematical modelling,
-                    computational methods, numerical analysis and
-                    scientific computing in Computational Materials Science.
+                    Teaching Mathematics and quantitative aptitude for
+                    competitive examinations, including CAT and other
+                    management entrance examinations. Focus areas include
+                    arithmetic, algebra, geometry, probability, statistics,
+                    data interpretation and mathematical reasoning.
                 </p>
 
             </div>
@@ -1581,13 +1466,32 @@
                 </div>
 
                 <h3>
-                    Mathematics & Physics Educator
+                    Mathematics Educator
                 </h3>
 
                 <p>
-                    Experience teaching students from school level through
-                    undergraduate engineering and competitive examination
-                    preparation.
+                    More than seven years of experience teaching mathematics
+                    from school level through undergraduate engineering and
+                    competitive examination preparation.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="date">
+                    IIT Madras
+                </div>
+
+                <h3>
+                    M.S. (Research) — Computational Materials Science
+                </h3>
+
+                <p>
+                    Academic research involving mathematical modelling,
+                    computational methods, numerical analysis and
+                    scientific problem solving.
                 </p>
 
             </div>
@@ -1604,7 +1508,7 @@
      EDUCATION
 ===================================================== -->
 
-<section>
+<section class="subjects">
 
     <div class="container">
 
@@ -1624,13 +1528,15 @@
             </h3>
 
             <p>
-                <strong>M.S. (Research) — Computational Materials Science</strong>
+                <strong>
+                    M.S. (Research) — Computational Materials Science
+                </strong>
             </p>
 
             <p>
                 Research involving mathematical modelling,
-                computational methods, scientific computing and
-                numerical analysis.
+                computational methods, scientific computing,
+                numerical analysis and quantitative problem solving.
             </p>
 
         </div>
@@ -1653,72 +1559,128 @@
         </div>
 
         <h2 class="section-title">
-            GATE Faculty Expertise
+            GMAT Faculty Expertise
         </h2>
 
         <p class="section-description">
-            Keywords relevant to GATE faculty recruitment, coaching
-            institutes, engineering education and academic profiles.
+            Relevant keywords for GMAT faculty recruitment, test-preparation
+            institutes, MBA admissions coaching and quantitative education.
         </p>
 
 
         <div class="keyword-list">
 
-            <span class="keyword">GATE Faculty</span>
+            <span class="keyword">
+                GMAT Faculty
+            </span>
 
-            <span class="keyword">GATE Engineering Mathematics</span>
+            <span class="keyword">
+                GMAT Quant Faculty
+            </span>
 
-            <span class="keyword">GATE Mechanical Engineering</span>
+            <span class="keyword">
+                GMAT Quantitative Reasoning
+            </span>
 
-            <span class="keyword">GATE Mathematics Faculty</span>
+            <span class="keyword">
+                GMAT Data Insights
+            </span>
 
-            <span class="keyword">Engineering Mathematics</span>
+            <span class="keyword">
+                GMAT Preparation
+            </span>
 
-            <span class="keyword">Mechanical Engineering</span>
+            <span class="keyword">
+                GMAT Coaching
+            </span>
 
-            <span class="keyword">Engineering Mechanics</span>
+            <span class="keyword">
+                GMAT Tutor
+            </span>
 
-            <span class="keyword">Fluid Mechanics</span>
+            <span class="keyword">
+                GMAT Mathematics
+            </span>
 
-            <span class="keyword">Thermodynamics</span>
+            <span class="keyword">
+                Quantitative Aptitude
+            </span>
 
-            <span class="keyword">Heat Transfer</span>
+            <span class="keyword">
+                Data Interpretation
+            </span>
 
-            <span class="keyword">Applied Mechanics</span>
+            <span class="keyword">
+                Data Sufficiency
+            </span>
 
-            <span class="keyword">Linear Algebra</span>
+            <span class="keyword">
+                Problem Solving
+            </span>
 
-            <span class="keyword">Calculus</span>
+            <span class="keyword">
+                Logical Reasoning
+            </span>
 
-            <span class="keyword">Differential Equations</span>
+            <span class="keyword">
+                Arithmetic
+            </span>
 
-            <span class="keyword">Vector Calculus</span>
+            <span class="keyword">
+                Algebra
+            </span>
 
-            <span class="keyword">Probability & Statistics</span>
+            <span class="keyword">
+                Geometry
+            </span>
 
-            <span class="keyword">Numerical Methods</span>
+            <span class="keyword">
+                Statistics
+            </span>
 
-            <span class="keyword">Complex Analysis</span>
+            <span class="keyword">
+                Probability
+            </span>
 
-            <span class="keyword">Mathematical Modelling</span>
+            <span class="keyword">
+                Word Problems
+            </span>
 
-            <span class="keyword">Problem Solving</span>
+            <span class="keyword">
+                Number Properties
+            </span>
 
-            <span class="keyword">Competitive Examination Preparation</span>
+            <span class="keyword">
+                Data Analysis
+            </span>
 
-            <span class="keyword">GATE Coaching</span>
+            <span class="keyword">
+                Quantitative Reasoning
+            </span>
 
-            <span class="keyword">GATE Preparation</span>
+            <span class="keyword">
+                Critical Thinking
+            </span>
 
-            <span class="keyword">Previous Year Questions</span>
+            <span class="keyword">
+                Mathematical Reasoning
+            </span>
 
-            <span class="keyword">Numerical Ability</span>
+            <span class="keyword">
+                CAT Quant Faculty
+            </span>
 
-            <span class="keyword">Conceptual Learning</span>
+            <span class="keyword">
+                MBA Entrance Preparation
+            </span>
 
-            <span class="keyword">Engineering Education</span>
+            <span class="keyword">
+                Competitive Examination Faculty
+            </span>
 
-            <span class="keyword">IIT Madras Alumni</span>
+            <span class="keyword">
+                IIT Madras Alumni
+            </span>
 
         </div>
 
@@ -1736,13 +1698,13 @@
     <div class="container">
 
         <h2>
-            Preparing for GATE?
+            Preparing for the GMAT?
         </h2>
 
         <p>
-            Build strong fundamentals, master engineering mathematics
-            and develop the problem-solving skills required for
-            competitive engineering examinations.
+            Strengthen your quantitative reasoning, develop structured
+            problem-solving skills and approach GMAT questions with
+            greater speed, accuracy and confidence.
         </p>
 
         <a
@@ -1764,12 +1726,13 @@
 <footer>
 
     <p>
-        © 2026 <strong>Elankovan Gopal</strong>
-        · GATE Faculty · Engineering Mathematics & Mechanical Engineering
+        © 2026
+        <strong>Elankovan Gopal</strong>
+        · GMAT Faculty · Quantitative Reasoning & Data Insights
     </p>
 
     <p>
-        GATE syllabus references based on the official GATE 2026 syllabus.
+        GMAT preparation topics presented for educational purposes.
     </p>
 
 </footer>
